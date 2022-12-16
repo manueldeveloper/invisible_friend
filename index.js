@@ -13,12 +13,13 @@ const port = process.env.PORT || 8080
 /**
  *  App Configuration
  */
+app.use(express.static('views'));
 
 /**
  * Routes Definitions
  */
 app.get("", (req, res) => {
-    res.status(200).send("Hello World!");
+    res.redirect("index.html");
 });
 
 /**
