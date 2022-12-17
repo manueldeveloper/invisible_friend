@@ -19,7 +19,7 @@ app.use(express.static('views'));
  * Routes Definitions
  */
 app.get("", (req, res) => {
-    res.redirect("index.html");
+    res.redirect("welcome.html");
 });
 
 /**
